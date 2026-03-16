@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Elm Portfolio</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+            background: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .bio {
+            color: #666;
+            font-size: 1.2rem;
+        }
+        .projects {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .project-card {
+            border: 1px solid #e1e4e8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        button {
+            background: #0070f3;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #0051b3;
+        }
+        .contact {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #e7f5ff;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="elm.js"></script>
+    <script>
+        var app = Elm.Main.init({
+            node: document.getElementById('app')
+        });
+    </script>
+</body>
+</html>
