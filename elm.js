@@ -6354,20 +6354,22 @@ var $author$project$Main$isHome = function (route) {
 	}
 };
 var $elm$html$Html$nav = _VirtualDom_node('nav');
+var $author$project$Main$isLocal = false;
+var $author$project$Main$siteRoot = $author$project$Main$isLocal ? '/' : 'portfolio.kroucis.github.io/';
 var $author$project$Main$toHref = function (route) {
 	switch (route.$) {
 		case 'Home':
-			return '/';
+			return $author$project$Main$siteRoot;
 		case 'BlogList':
-			return '/blog';
+			return $author$project$Main$siteRoot + 'blog';
 		case 'BlogPost':
 			var slug = route.a;
-			return '/blog/' + slug;
+			return $author$project$Main$siteRoot + ('blog/' + slug);
 		case 'ProjectDetail':
 			var slug = route.a;
-			return '/projects/' + slug;
+			return $author$project$Main$siteRoot + ('projects/' + slug);
 		default:
-			return '/';
+			return $author$project$Main$siteRoot;
 	}
 };
 var $author$project$Main$viewNav = function (route) {

@@ -30,6 +30,20 @@ type Route
     | NotFound
 
 
+isLocal : Bool
+isLocal =
+    False
+
+
+siteRoot : String
+siteRoot =
+    if isLocal then
+        "/"
+
+    else
+        "portfolio.kroucis.github.io/"
+
+
 routeParser : Parser (Route -> a) a
 routeParser =
     Parser.oneOf
@@ -49,19 +63,19 @@ toHref : Route -> String
 toHref route =
     case route of
         Home ->
-            "/"
+            siteRoot
 
         BlogList ->
-            "/blog"
+            siteRoot ++ "blog"
 
         BlogPost slug ->
-            "/blog/" ++ slug
+            siteRoot ++ "blog/" ++ slug
 
         ProjectDetail slug ->
-            "/projects/" ++ slug
+            siteRoot ++ "projects/" ++ slug
 
         NotFound ->
-            "/"
+            siteRoot
 
 
 
