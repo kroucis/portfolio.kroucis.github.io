@@ -4,6 +4,8 @@
 
 module Me exposing (bio, links, name, photo)
 
+import Images
+
 
 name : String
 name =
@@ -21,7 +23,7 @@ bio =
 
 photo : String
 photo =
-    "Me.jpg"
+    Images.me
 
 
 

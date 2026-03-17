@@ -6144,12 +6144,16 @@ var $author$project$Posts$all = _List_fromArray(
 		title: 'Hello, World'
 	}
 	]);
+var $author$project$Images$imagesRoot = '/images/';
+var $author$project$Images$ch3ss_m4tch = $author$project$Images$imagesRoot + 'Ch3ssM4tch.png';
+var $author$project$Images$pixel_forge = $author$project$Images$imagesRoot + 'PixelForge.png';
+var $author$project$Images$simple_swaps = $author$project$Images$imagesRoot + 'SimpleSwaps.jpg';
 var $author$project$Projects$all = _List_fromArray(
 	[
 		{
 		description: '<TODO>',
 		github: $elm$core$Maybe$Nothing,
-		image: 'Ch3ssM4tch.png',
+		image: $author$project$Images$ch3ss_m4tch,
 		slug: 'ch3ss-m4tch',
 		summary: 'Competitive match-3 game based loosely on chess. First Clockwork-based game.',
 		tags: _List_fromArray(
@@ -6164,7 +6168,7 @@ var $author$project$Projects$all = _List_fromArray(
 		{
 		description: '<TODO>',
 		github: $elm$core$Maybe$Nothing,
-		image: 'SimpleSwaps.jpg',
+		image: $author$project$Images$simple_swaps,
 		slug: 'simple-swaps',
 		summary: 'Block swapping and pattern matching game focused on engine features and simplicity.',
 		tags: _List_fromArray(
@@ -6179,7 +6183,7 @@ var $author$project$Projects$all = _List_fromArray(
 		{
 		description: '<TODO>',
 		github: $elm$core$Maybe$Nothing,
-		image: 'PixelForge.png',
+		image: $author$project$Images$pixel_forge,
 		slug: 'pixel-forge',
 		summary: 'Metal-based shader creation tool.',
 		tags: _List_fromArray(
@@ -6643,7 +6647,8 @@ var $elm$html$Html$Events$onClick = function (msg) {
 		'click',
 		$elm$json$Json$Decode$succeed(msg));
 };
-var $author$project$Me$photo = 'Me.jpg';
+var $author$project$Images$me = $author$project$Images$imagesRoot + 'Me.jpg';
+var $author$project$Me$photo = $author$project$Images$me;
 var $elm$html$Html$Attributes$src = function (url) {
 	return A2(
 		$elm$html$Html$Attributes$stringProperty,
