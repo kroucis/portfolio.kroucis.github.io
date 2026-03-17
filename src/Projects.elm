@@ -10,7 +10,7 @@ type alias Project =
     , description : String
     , tags : List String
     , github : Maybe String
-    , url : Maybe String
+    , urls : List ( String, String )
     }
 
 
@@ -23,7 +23,7 @@ all =
       , summary = "A short description of what this project does."
       , description = "A longer description. What problem does it solve? What did you learn? What's interesting about it?"
       , tags = [ "Elm", "Web" ]
-      , github = Just "https://github.com/you/your-project"
-      , url = Nothing
+      , github = Nothing
+      , urls = []
       }
     ]

@@ -312,8 +312,8 @@ viewProjectDetail slug =
                 , div [ class "tags", style "margin-top" "2rem" ]
                     (List.filterMap identity
                         [ project.github |> Maybe.map (\u -> a [ href u, target "_blank", rel "noopener noreferrer" ] [ text "GitHub →" ])
-                        , project.url |> Maybe.map (\u -> a [ href u, target "_blank", rel "noopener noreferrer" ] [ text "Visit →" ])
                         ]
+                        ++ List.map (\( label, u ) -> a [ href u, target "_blank", rel "noopener noreferrer" ] [ text (label ++ " →") ]) project.urls
                     )
                 ]
 
