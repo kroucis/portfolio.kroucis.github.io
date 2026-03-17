@@ -21,7 +21,7 @@ bio =
 
 photo : String
 photo =
-    "images/Me.jpg"
+    "Me.jpg"
 
 
 

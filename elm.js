@@ -6149,7 +6149,7 @@ var $author$project$Projects$all = _List_fromArray(
 		{
 		description: '<TODO>',
 		github: $elm$core$Maybe$Nothing,
-		image: '/images/Ch3ssM4tch.png',
+		image: 'Ch3ssM4tch.png',
 		slug: 'ch3ss-m4tch',
 		summary: 'Competitive match-3 game based loosely on chess. First Clockwork-based game.',
 		tags: _List_fromArray(
@@ -6164,7 +6164,7 @@ var $author$project$Projects$all = _List_fromArray(
 		{
 		description: '<TODO>',
 		github: $elm$core$Maybe$Nothing,
-		image: '/images/SimpleSwaps.jpg',
+		image: 'SimpleSwaps.jpg',
 		slug: 'simple-swaps',
 		summary: 'Block swapping and pattern matching game focused on engine features and simplicity.',
 		tags: _List_fromArray(
@@ -6179,7 +6179,7 @@ var $author$project$Projects$all = _List_fromArray(
 		{
 		description: '<TODO>',
 		github: $elm$core$Maybe$Nothing,
-		image: '/images/PixelForge.png',
+		image: 'PixelForge.png',
 		slug: 'pixel-forge',
 		summary: 'Metal-based shader creation tool.',
 		tags: _List_fromArray(
@@ -6641,7 +6641,7 @@ var $elm$html$Html$Events$onClick = function (msg) {
 		'click',
 		$elm$json$Json$Decode$succeed(msg));
 };
-var $author$project$Me$photo = 'images/Me.jpg';
+var $author$project$Me$photo = 'Me.jpg';
 var $elm$html$Html$Attributes$src = function (url) {
 	return A2(
 		$elm$html$Html$Attributes$stringProperty,
