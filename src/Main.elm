@@ -193,7 +193,12 @@ isBlog route =
 viewFooter : Html Msg
 viewFooter =
     footer []
-        [ text "Built with Elm and Claude.ai Sonnet 4.6." ]
+        [ text "Built with "
+        , a [ href "https://elm-lang.org/", target "_blank", rel "noopener noreferrer" ] [ text "Elm" ]
+        , text " and "
+        , a [ href "https://claude.ai/", target "_blank", rel "noopener noreferrer" ] [ text "Claude.ai" ]
+        , text " Sonnet 4.6."
+        ]
 
 
 viewPage : Route -> Bool -> Html Msg
